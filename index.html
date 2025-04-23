@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haber Portalı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-menu">
+    <nav class="menu-container">
+      <ul class="main-menu">
+        <li class="has-sub">SON DAKİKA
+          <ul class="submenu">
+            <li>Son Dakika 1</li>
+            <li>Son Dakika 2</li>
+            <li>Son Dakika 3</li>
+          </ul>
+        </li>
+        <li class="has-sub">YAZARLAR
+          <ul class="submenu">
+            <li>Yazarlar </li>
+            <li>Yazmayanlar</li>
+            <li>Yazıp Silenler</li>
+          </ul>
+        </li>
+        <li class="has-sub">GÜNDEM
+          <ul class="submenu">
+            <li>Gündem </li>
+            <li>Çok</li>
+            <li>Karışık</li>
+          </ul>
+        </li>
+        <li class="has-sub">DÜNYA
+          <ul class="submenu">
+            <li>ORTA DOĞU</li>
+            <li>AVRUPA</li>
+            <li>GLOBAL</li>
+          </ul>
+        </li>
+        <li class="has-sub">GÜNÜN İÇİNDEN
+          <ul class="submenu">
+            <li>GÜNLÜK YAŞAM</li>
+            <li>SAĞLIK</li>
+            <li>SAĞLIKLI YAŞAM</li>
+          </ul>
+        </li>
+        <li class="has-sub">SPOR
+          <ul class="submenu">
+            <li>FUTBOL</li>
+            <li>BASKETBOL</li>
+            <li>VOLEYBOL</li>
+          </ul>
+        </li>
+        <li class="has-sub">HAYAT
+          <ul class="submenu">
+            <li>KÜLTÜR</li>
+            <li>SANAT</li>
+            <li>EĞLENCE</li>
+          </ul>
+        </li>
+        <li class="has-sub">MAGAZİN
+          <ul class="submenu">
+            <li>KİME NE OLMUŞ</li>
+            <li>KİM NE YAPMIŞ</li>
+            <li>KİM KİMLEYMİŞ</li>
+          </ul>
+        </li>
+        <li class="has-sub">FİNANS
+          <ul class="submenu">
+            <li>BORSA</li>
+            <li>KRİPTO</li>
+            <li>ALTIN</li>
+          </ul>
+          <li class="has-sub">RESMİ İLANLAR
+            <ul class="submenu">
+              <li>İLAN 1</li>
+              <li>İLAN 2</li>
+              <li>İLAN 3</li>
+            </ul>
+          </li>
+        </li>
+     
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="currency-bar" id="currencyBar"></section>
+
+
+  <div class="ad left-ad" id="leftAd">
+    <button class="close-btn" onclick="closeAd('leftAd')">x</button>
+    <a href="https://example.com" target="_blank">
+      <img src="https://dummyimage.com/120x600/ccc/000&text=Reklam+1" alt="Reklam">
+    </a>
+  </div>
+
+
+  <div class="ad right-ad" id="rightAd">
+    <button class="close-btn" onclick="closeAd('rightAd')">x</button>
+    <a href="https://example.com" target="_blank">
+      <img src="https://loremflickr.com/120/600/shoes" alt="Reklam">
+    </a>
+  </div>
+
+
+  <main class="content-container">
+    <section class="slider">
+      <div class="slider-wrapper" id="sliderWrapper"></div>
+      <button class="slider-btn left" onclick="moveSlide(-1)">‹</button>
+      <button class="slider-btn right" onclick="moveSlide(1)">›</button>
+    </section>
+
+    <aside class="sidebar">
+      <div class="side-news">
+        <img src="https://loremflickr.com/320/240?lock=1" alt="Yan Haber">
+        <p>Dünyanın en zengin kadınları ve servetleri açıklandı</p>
+      </div>
+      <div class="weather-box" id="weatherBox">
+        <h3>İzmir - 16°C</h3>
+        <p>Sıcaklık aşırı düşecek gelecek Cuma</p>
+        <div class="weather-days" id="weatherDays"></div>
+      </div>
+    </aside>
+  </main>
+
+
+  <div class="slider-dots" id="sliderDots"></div>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
